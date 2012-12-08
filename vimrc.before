@@ -16,10 +16,6 @@ autocmd InsertLeave,WinLeave * if exists('w:last_fdm') | let &l:foldmethod=w:las
 " No Help, please
 nmap <F1> <Esc>
 
-" ,rt -> regenerate tags, including objects/functions from installed gems
-" http://effectif.com/vim/using-ctags-with-bundler-gems
-map <leader>rt :!ctags --extra=+f --exclude=.git --exclude=log --exclude=vendor --exclude=cache --exclude=test-report --exclude=jquery.*.js --exclude=jquery-*.js --exclude=lessphp --exclude=composer.phar -R *<CR><C-M>
-
 " set tags-lookup-path
 set tags=tags;/
 
