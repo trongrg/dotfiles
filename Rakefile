@@ -24,6 +24,7 @@ task :install => [:submodule_init, :submodules] do
     file_operation(Dir.glob('{vim,vimrc,vimrc.before}')) 
     Rake::Task["install_vundle"].execute
   end
+  file_operation(Dir.glob('ackrc'))
 
   Rake::Task["install_prezto"].execute
 
