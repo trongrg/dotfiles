@@ -30,3 +30,9 @@ Session.vim
 # SASS
 # ----------------------------------------------------------------------------------------------
 .sass-cache
+
+.powrc
+.ruby-version
+.ruby-gemset
+.rvmrc
+.powenv
