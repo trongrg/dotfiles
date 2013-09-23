@@ -1,9 +1,14 @@
-let g:ctrlp_custom_ignore = '\.git$\|\.hg$\|\.svn$'
+let g:ctrlp_custom_ignore = {
+      \ 'dir':  '\v[\/](\.git|\.hg|\.svn|\.ve|app/cache|app/logs|test-report|coverage|vendor|lessphp)$',
+      \ 'file': '\v\.(exe|so|dll|DS_Store|htaccess)$',
+      \ 'link': 'some_bad_symbolic_links',
+      \ }
+
 let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files . --cached --exclude-standard --others']
 
 " Default to filename searches - so that appctrl will find application
 " controller
-let g:ctrlp_by_filename = 1
+" let g:ctrlp_by_filename = 1
 
 " We don't want to use Ctrl-p as the mapping because
 " it interferes with YankRing (paste, then hit ctrl-p)
