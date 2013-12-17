@@ -105,11 +105,11 @@
 [push]
   # 'git push' will push the current branch to its tracking branch
   # the usual default is to push all branches
-  default = tracking
+	default = current
 [core]
   autocrlf = false
   editor = vim
-  excludesfile = ~/.yadr/git/gitignore
+	excludesfile = /Users/sstech02/.yadr/git/gitignore
 [advice]
   statusHints = false
 [diff]
@@ -123,3 +123,5 @@
   enabled = true
 [include]
   path = .gitconfig.user
+[init]
+  templatedir = ~/.git_template
