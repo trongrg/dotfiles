@@ -74,7 +74,7 @@ desc "Performs migration from pathogen to vundle"
 task :vundle_migration do
   puts "======================================================"
   puts "Migrating from pathogen to vundle vim plugin manager. "
-  puts "This will move the old .vim/bundle directory to" 
+  puts "This will move the old .vim/bundle directory to"
   puts ".vim/bundle.old and replacing all your vim plugins with"
   puts "the standard set of plugins. You will then be able to "
   puts "manage your vim's plugin configuration by editing the "
@@ -92,21 +92,19 @@ end
 desc "Runs Vundle installer in a clean vim environment"
 task :install_vundle do
   puts "======================================================"
-  puts "Installing vundle."
+  puts "Installing and updating vundles."
   puts "The installer will now proceed to run BundleInstall."
-  puts "Due to a bug, the installer may report some errors"
-  puts "when installing the plugin 'syntastic'. Fortunately"
-  puts "Syntastic will install and work properly despite the"
-  puts "errors so please just ignore them and let's hope for"
-  puts "an update that fixes the problem!"
   puts "======================================================"
 
   puts ""
-  
-  run %{
-    cd $HOME/.yadr
-    git clone https://github.com/gmarik/vundle.git #{File.join('vim','bundle', 'vundle')}
-  }
+
+  vundle_path = File.join('vim','bundle', 'vundle')
+  unless File.exists?(vundle_path)
+    run %{
+      cd $HOME/.yadr
+      git clone https://github.com/gmarik/vundle.git #{vundle_path}
+    }
+  end
 
   Vundle::update_vundle
 end
@@ -137,7 +135,7 @@ def install_homebrew
     puts "Installing Homebrew, the OSX package manager...If it's"
     puts "already installed, this will do nothing."
     puts "======================================================"
-    run %{ruby -e "$(curl -fsSkL raw.github.com/mxcl/homebrew/go)"}
+    run %{ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"}
   end
 
   puts
@@ -152,13 +150,14 @@ def install_homebrew
   puts "Installing Homebrew packages...There may be some warnings."
   puts "======================================================"
   run %{brew install zsh ctags git hub tmux reattach-to-user-namespace the_silver_searcher}
+  run %{brew install macvim --custom-icons --override-system-vim --with-lua --with-luajit}
   puts
   puts
 end
 
 def install_fonts
   puts "======================================================"
-  puts "Installing patched fonts for Powerline."
+  puts "Installing patched fonts for Powerline/Lightline."
   puts "======================================================"
   run %{ cp -f $HOME/.yadr/fonts/* $HOME/Library/Fonts }
   puts
@@ -193,7 +192,7 @@ def install_term_theme
   message = "I've found #{profiles.size} #{profiles.size>1 ? 'profiles': 'profile'} on your iTerm2 configuration, which one would you like to apply the Solarized theme to?"
   profiles << 'All'
   selected = ask message, profiles
-  
+
   if selected == 'All'
     (profiles.size-1).times { |idx| apply_theme_to_iterm_profile_idx idx, color_scheme_file }
   else
@@ -224,7 +223,7 @@ def ask(message, values)
     else
       break
     end
-  end 
+  end
   selection = selection.to_i-1
   values[selection]
 end
@@ -254,7 +253,15 @@ def install_prezto
     puts "Zsh is already configured as your shell of choice. Restart your session to load the new settings"
   else
     puts "Setting zsh as your default shell"
-    run %{ chsh -s /bin/zsh }
+    if File.exists?("/usr/local/bin/zsh")
+      if File.readlines("/private/etc/shells").grep("/usr/local/bin/zsh").empty?
+        puts "Adding zsh to standard shell list"
+        run %{ echo "/usr/local/bin/zsh" | sudo tee -a /private/etc/shells }
+      end
+      run %{ chsh -s /usr/local/bin/zsh }
+    else
+      run %{ chsh -s /bin/zsh }
+    end
   end
 end
 
