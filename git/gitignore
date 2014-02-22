@@ -38,3 +38,5 @@ Session.vim
 .powenv
 
 rerun.txt
+
+.gitignore
