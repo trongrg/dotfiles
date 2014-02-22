@@ -18,6 +18,13 @@ function! YRRunAfterMaps()
   nnoremap Y   :<C-U>YRYankCount 'y$'<CR>
 endfunction
 
+" Make 0 go to the first character rather than the beginning
+" of the line. When we're programming, we're almost always
+" interested in working with text rather than empty space. If
+" you want the traditional beginning of line, use ^
+nnoremap 0 ^
+nnoremap ^ 0
+
 " ========================================
 " RSI Prevention - keyboard remaps
 " ========================================
@@ -98,7 +105,7 @@ nmap <D-N> :NERDTreeToggle<CR>
 " Open the project tree and expose current file in the nerdtree with Ctrl-\
 nnoremap <silent> <C-\> :NERDTreeFind<CR>:vertical res 30<CR>
 
-" ,q to toggle quickfix window (where you have stuff like GitGrep)
+" ,q to toggle quickfix window (where you have stuff like Ag)
 " ,oq to open it back up (rare)
 nmap <silent> ,qc :cclose<CR>
 nmap <silent> ,qo :copen<CR>
@@ -118,13 +125,6 @@ autocmd FileType javascript map <buffer> <D-j> {
 " Command-/ to toggle comments
 map <D-/> :TComment<CR>
 imap <D-/> <Esc>:TComment<CR>i
-
-"GitGrep - open up a git grep line, with a quote started for the search
-nnoremap ,gg :GitGrep ""<left>
-"GitGrep Current Partial
-nnoremap ,gcp :GitGrepCurrentPartial<CR>
-"GitGrep Current File
-nnoremap ,gcf :call GitGrep(expand("%:t:r"))<CR>
 
 
 "Move back and forth through previous and next buffers
