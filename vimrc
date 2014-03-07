@@ -103,8 +103,5 @@ set scrolloff=8         "Start scrolling when we're 8 lines away from margins
 set sidescrolloff=15
 set sidescroll=1
 
-let g:session_autoload = 'no'
-let g:session_autosave = 'no'
-
 " ================ Custom Settings ========================
 so ~/.yadr/vim/settings.vim
