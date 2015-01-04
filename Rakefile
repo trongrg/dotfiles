@@ -95,7 +95,7 @@ desc "Runs Vundle installer in a clean vim environment"
 task :install_vundle do
   puts "======================================================"
   puts "Installing and updating vundles."
-  puts "The installer will now proceed to run BundleInstall."
+  puts "The installer will now proceed to run PluginInstall to install vundles."
   puts "======================================================"
 
   puts ""
