@@ -21,7 +21,7 @@ task :install => [:submodule_init, :submodules] do
   file_operation(Dir.glob('tmux/*')) if want_to_install?('tmux config')
   file_operation(Dir.glob('vimify/*')) if want_to_install?('vimification of command line tools')
   if want_to_install?('vim configuration (highly recommended)')
-    file_operation(Dir.glob('{vim,vimrc,vimrc.before,vimrc.after}')) 
+    file_operation(Dir.glob('{vim,vimrc,vimrc.before,vimrc.after}'))
     Rake::Task["install_vundle"].execute
   end
   file_operation(Dir.glob('ackrc'))
@@ -263,7 +263,7 @@ def install_prezto
   run %{ ln -nfs "$HOME/.yadr/zsh/prezto" "${ZDOTDIR:-$HOME}/.zprezto" }
 
   # The prezto runcoms are only going to be installed if zprezto has never been installed
-  install_files(Dir.glob('zsh/prezto/runcoms/z*'), :symlink)
+  file_operation(Dir.glob('zsh/prezto/runcoms/z*'), :symlink)
 
   puts
   puts "Overriding prezto ~/.zpreztorc with YADR's zpreztorc to enable additional modules..."
