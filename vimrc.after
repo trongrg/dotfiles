@@ -15,3 +15,10 @@ let g:SuperTabContextDefaultCompletionType = "<c-n>"
 
 " PHP xdebug with DBGPavim
 let g:dbgPavimOnce = 1
+
+
+if executable('ag')
+  let g:ctrlp_user_command = 'ag %s -l --nocolor --hidden -g ""'
+else
+  let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
+endif
