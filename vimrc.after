@@ -22,3 +22,11 @@ if executable('ag')
 else
   let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
 endif
+
+let g:tsuquyomi_use_local_typescript = 1
+let g:tsuquyomi_use_dev_node_module = 1
+" let g:tsuquyomi_tsserver_path = '/usr/local/bin/tsserver'
+
+set grepprg=ag
+let g:grep_cmd_opts = '--line-numbers --noheading'
+let g:dbgPavimPathMap = [['/Users/trongtran/code/co-ag','/vagrant']]
