@@ -76,6 +76,9 @@ nnoremap <C-K> :m .-2<CR>==
 vnoremap <C-J> :m '>+1<CR>gv=gv
 vnoremap <C-K> :m '<-2<CR>gv=gv
 
+" Change lint error sign form >> to --
+let g:ale_sign_error = '--'
+
 filetype plugin on
 filetype indent on
 
