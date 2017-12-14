@@ -10,7 +10,7 @@
     # Now with The Cao awesome hotkeys and new Bundle
     # Credit: trongrg/dotfiles
 
-#### sh -c "\`curl -fsSL https://raw.githubusercontent.com/caominhthe/awesomevim/master/install.sh \`"
+#### sh -c "\`curl -fsSL https://raw.githubusercontent.com/caominhthe/dotfiles/master/install.sh \`"
 **Few more things
 
 **Have trouble with YouCompleteMe?
