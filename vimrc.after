@@ -10,6 +10,8 @@ autocmd BufWinEnter * match ExtraWhitespace /\s\+$/
 autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
 autocmd InsertLeave * match ExtraWhitespace /\s\+$/
 autocmd BufWinLeave * call clearmatches()
+let g:SuperTabDefaultCompletionTyp = "<c-n>"
+let g:SuperTabContextDefaultCompletionType = "<c-n>"
 
 " PHP xdebug with DBGPavim
 let g:dbgPavimOnce = 1
