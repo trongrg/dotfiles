@@ -125,3 +125,6 @@ set smartcase       " ...unless we type a capital
 
 " ================ Custom Settings ========================
 so ~/.yadr/vim/settings.vim
+
+set grepprg=ag
+let g:grep_cmd_opts = '--line-numbers --noheading'
