@@ -13,10 +13,6 @@ autocmd BufWinLeave * call clearmatches()
 let g:SuperTabDefaultCompletionTyp = "<c-n>"
 let g:SuperTabContextDefaultCompletionType = "<c-n>"
 
-" PHP xdebug with DBGPavim
-let g:dbgPavimOnce = 1
-
-
 if executable('ag')
   let g:ctrlp_user_command = 'ag %s -l --nocolor --hidden -g ""'
 else
@@ -26,8 +22,21 @@ endif
 let g:tsuquyomi_use_local_typescript = 1
 let g:tsuquyomi_use_dev_node_module = 1
 let g:tsuquyomi_use_vimproc=1
-" let g:tsuquyomi_tsserver_path = '/usr/local/bin/tsserver'
 
 set grepprg=ag
 let g:grep_cmd_opts = '--line-numbers --noheading'
 let g:dbgPavimPathMap = [['/Users/trongtran/code/co-ag','/vagrant']]
+
+let g:vdebug_keymap = {
+\    "run" : "<F5>",
+\    "run_to_cursor" : "<F9>",
+\    "step_over" : "<F3>",
+\    "step_into" : "<F2>",
+\    "step_out" : "<F4>",
+\    "close" : "<F6>",
+\    "detach" : "<F7>",
+\    "set_breakpoint" : "<F10>",
+\    "get_context" : "<F11>",
+\    "eval_under_cursor" : "<F12>",
+\    "eval_visual" : "<Leader>e"
+\}
