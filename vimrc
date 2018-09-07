@@ -68,7 +68,16 @@ set expandtab
 
 " Auto indent pasted text
 nnoremap p p=`]<C-o>
-nnoremap P P=`]<C-o>
+nnoremap P P=`]<C-o>o
+
+" Keymap to move line block
+nnoremap <C-J> :m .+1<CR>==
+nnoremap <C-K> :m .-2<CR>==
+vnoremap <C-J> :m '>+1<CR>gv=gv
+vnoremap <C-K> :m '<-2<CR>gv=gv
+
+" Change lint error sign form >> to --
+let g:ale_sign_error = '--'
 
 filetype plugin on
 filetype indent on
@@ -115,3 +124,6 @@ set smartcase       " ...unless we type a capital
 
 " ================ Custom Settings ========================
 so ~/.yadr/vim/settings.vim
+
+set grepprg=ag
+let g:grep_cmd_opts = '--line-numbers --noheading'

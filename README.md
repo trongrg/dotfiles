@@ -1,16 +1,25 @@
-     _     _           _
-    | |   | |         | |
-    | |___| |_____  __| | ____
-    |_____  (____ |/ _  |/ ___)
-     _____| / ___ ( (_| | |
-    (_______\_____|\____|_|
-
-    # Yet Another Dotfile Repo v1.1
+```
+  _____  _             ____               __   __  _     ____   ____
+ |_   _|| |__    ___  / ___| __ _   ___   \ \ / / / \   |  _ \ |  _ \
+   | |  | '_ \  / _ \| |    / _` | / _ \   \ V / / _ \  | | | || |_) |
+   | |  | | | ||  __/| |___| (_| || (_) |   | | / ___ \ | |_| ||  _ <
+   |_|  |_| |_| \___| \____|\__,_| \___/    |_|/_/   \_\|____/ |_| \_\
+```
+    # Yet Another Dotfile Repo v2.1
     # Now with Prezto and Vundle!
+    # Now with The Cao awesome hotkeys and new Bundle
+    # Credit: trongrg/dotfiles
 
-[![Join the chat at https://gitter.im/skwp/dotfiles](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/skwp/dotfiles?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+#### sh -c "\`curl -fsSL https://raw.githubusercontent.com/caominhthe/dotfiles/master/install.sh \`"
+**Few more things
 
-#### sh -c "\`curl -fsSL https://raw.githubusercontent.com/skwp/dotfiles/master/install.sh \`"
+**Have trouble with YouCompleteMe?
+* cd into YCM directory under ~/.vim/plugged/
+* $ ./install.py type it in & run it which compiles
+
+**Have problem with VimProc?
+* cd into vimproc under .yadr/vim/bundle/
+* Compile it with $ make
 
 **Always be sure to run `rake update` after pulling to ensure plugins are updated**
 
@@ -19,7 +28,7 @@
 **YADR is an opinionated dotfile repo that will make your heart sing**
 
   * The best bits of all the top dotfile repos, vim and zsh plugins curated in one place, into a simple and cohesive way of working.
-  * More than 90 vim plugins, all under one roof, working together, each plugin researched and configured to be at its best, often with better shortcut keys.
+  * More than 90 vir, all under one roof, working together, each plugin researched and configured to be at its best, often with better shortcut keys.
   * Many zsh plugins, starting with the wonderful Prezto base, and adding a few niceties on top.
   * All things are vimized: irb, postgres command line, etc.
 
@@ -41,14 +50,7 @@ Please use GitHub Issues for pull requests or bug reports only.
 To get started please run:
 
 ```bash
-sh -c "`curl -fsSL https://raw.githubusercontent.com/skwp/dotfiles/master/install.sh`"
-```
-
-**Note:** YADR will automatically install all of its subcomponents. If you want to be asked
-about each one, use:
-
-```bash
-sh -c "`curl -fsSL https://raw.githubusercontent.com/skwp/dotfiles/master/install.sh`" -s ask
+sh -c "`curl -fsSL https://raw.githubusercontent.com/caominhthe/awesomevim/master/install.sh`"
 ```
 
 ## Wait, you're not done! Do this:
@@ -320,7 +322,7 @@ These hacks are Lion-centric. May not work for other OS'es. My favorite mods inc
 brew uninstall macvim
 brew remove macvim
 brew cleanup
-brew install macvim --custom-icons --with-override-system-vim --with-lua --with-luajit
+brew install macvim --custom-icons --override-system-vim --with-lua --with-luajit
 ```
 
 ### Terminal Vim troubles with Lua?

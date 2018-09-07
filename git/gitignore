@@ -6,6 +6,7 @@
 # Files that might appear on external disk
 .Spotlight-V100
 .Trashes
+.git
 
 # Windows   taken from: https://github.com/github/gitignore/blob/master/Global/Windows.gitignore
 # ----------------------------------------------------------------------------------------------
@@ -45,3 +46,11 @@ Session.vim
 # SASS
 # ----------------------------------------------------------------------------------------------
 .sass-cache
+
+.powrc
+.ruby-version
+.ruby-gemset
+.rvmrc
+.powenv
+
+rerun.txt

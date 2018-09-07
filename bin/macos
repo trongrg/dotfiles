@@ -2,14 +2,14 @@
 # https://github.com/mathiasbynens/dotfiles/blob/master/.macos
 
 # Disable menu bar transparency
-defaults write NSGlobalDomain AppleEnableMenuBarTransparency -bool false
+# defaults write NSGlobalDomain AppleEnableMenuBarTransparency -bool false
 
 # Show remaining battery time; hide percentage
-defaults write com.apple.menuextra.battery ShowPercent -string "NO"
-defaults write com.apple.menuextra.battery ShowTime -string "YES"
+# defaults write com.apple.menuextra.battery ShowPercent -string "NO"
+# defaults write com.apple.menuextra.battery ShowTime -string "YES"
 
 # Always show scrollbars
-defaults write NSGlobalDomain AppleShowScrollBars -string "Always"
+# defaults write NSGlobalDomain AppleShowScrollBars -string "Always"
 
 # Expand save panel by default
 defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
@@ -25,7 +25,7 @@ defaults write com.apple.LaunchServices LSQuarantine -bool false
 defaults write NSGlobalDomain NSTextShowsControlCharacters -bool true
 
 # Disable opening and closing window animations
-defaults write NSGlobalDomain NSAutomaticWindowAnimationsEnabled -bool false
+# defaults write NSGlobalDomain NSAutomaticWindowAnimationsEnabled -bool false
 
 # Disable Mission Control Animations
 defaults write com.apple.dock expose-animation-duration -int 0
@@ -63,9 +63,9 @@ defaults write NSGlobalDomain InitialKeyRepeat -int 15
 defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
 
 # Enable tap to click (Trackpad) for this user and for the login screen
-defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool true
-defaults -currentHost write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
-defaults write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
+# defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool true
+# defaults -currentHost write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
+# defaults write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
 
 # # Map bottom right Trackpad corner to right-click
 # defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadCornerSecondaryClick -int 2
@@ -78,10 +78,10 @@ defaults write com.apple.screensaver askForPassword -int 1
 defaults write com.apple.screensaver askForPasswordDelay -int 0
 
 # Allow quitting Finder via ⌘ + Q; doing so will also hide desktop icons
-defaults write com.apple.finder QuitMenuItem -bool true
+# defaults write com.apple.finder QuitMenuItem -bool true
 
 # Disable window animations and Get Info animations in Finder
-defaults write com.apple.finder DisableAllAnimations -bool true
+# defaults write com.apple.finder DisableAllAnimations -bool true
 
 # Show all filename extensions in Finder
 defaults write NSGlobalDomain AppleShowAllExtensions -bool true
@@ -124,7 +124,7 @@ defaults write com.apple.finder WarnOnEmptyTrash -bool false
 # defaults write com.apple.finder EmptyTrashSecurely -bool true
 
 # Enable AirDrop over Ethernet and on unsupported Macs running Lion
-defaults write com.apple.NetworkBrowser BrowseAllInterfaces -bool true
+# defaults write com.apple.NetworkBrowser BrowseAllInterfaces -bool true
 
 # Show the ~/Library folder
 chflags nohidden ~/Library
@@ -141,7 +141,7 @@ chflags nohidden ~/Library
 # defaults write com.apple.dock wvous-bl-modifier -int 0
 
 # Enable highlight hover effect for the grid view of a stack (Dock)
-defaults write com.apple.dock mouse-over-hilte-stack -bool true
+# defaults write com.apple.dock mouse-over-hilte-stack -bool true
 
 # Enable spring loading for all Dock items
 defaults write com.apple.dock enable-spring-load-actions-on-all-items -bool true
@@ -150,7 +150,7 @@ defaults write com.apple.dock enable-spring-load-actions-on-all-items -bool true
 defaults write com.apple.dock show-process-indicators -bool true
 
 # Don’t animate opening applications from the Dock
-defaults write com.apple.dock launchanim -bool false
+# defaults write com.apple.dock launchanim -bool false
 
 # Remove the auto-hiding Dock delay
 defaults write com.apple.Dock autohide-delay -float 0
@@ -159,7 +159,7 @@ defaults write com.apple.Dock autohide-delay -float 0
 defaults write com.apple.dock autohide-time-modifier -float 0.25
 
 # Enable the 2D Dock
-defaults write com.apple.dock no-glass -bool true
+# defaults write com.apple.dock no-glass -bool true
 
 # Automatically hide and show the Dock
 defaults write com.apple.dock autohide -bool true
@@ -217,8 +217,8 @@ defaults write com.apple.iTunes disablePing -bool true
 defaults write com.apple.iTunes NSUserKeyEquivalents -dict-add "Target Search Field" "@F"
 
 # Disable send and reply animations in Mail.app
-defaults write com.apple.Mail DisableReplyAnimations -bool true
-defaults write com.apple.Mail DisableSendAnimations -bool true
+# defaults write com.apple.Mail DisableReplyAnimations -bool true
+# defaults write com.apple.Mail DisableSendAnimations -bool true
 
 # Copy email addresses as `foo@example.com` instead of `Foo Bar <foo@example.com>` in Mail.app
 defaults write com.apple.mail AddressesIncludeNameOnPasteboard -bool false
