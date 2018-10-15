@@ -127,3 +127,5 @@ so ~/.yadr/vim/settings.vim
 
 set grepprg=ag
 let g:grep_cmd_opts = '--line-numbers --noheading'
+let g:python2_host_prog = '/usr/local/bin/python'
+let g:python3_host_prog = '/usr/local/bin/python3'
