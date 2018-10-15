@@ -1,25 +1,16 @@
 ```
-  _____  _             ____               __   __  _     ____   ____
- |_   _|| |__    ___  / ___| __ _   ___   \ \ / / / \   |  _ \ |  _ \
-   | |  | '_ \  / _ \| |    / _` | / _ \   \ V / / _ \  | | | || |_) |
-   | |  | | | ||  __/| |___| (_| || (_) |   | | / ___ \ | |_| ||  _ <
-   |_|  |_| |_| \___| \____|\__,_| \___/    |_|/_/   \_\|____/ |_| \_\
+ __   __  _     ____   ____
+ \ \ / / / \   |  _ \ |  _ \
+  \ V / / _ \  | | | || |_) |
+   | | / ___ \ | |_| ||  _ <
+   |_|/_/   \_\|____/ |_| \_\
 ```
     # Yet Another Dotfile Repo v2.1
     # Now with Prezto and Vundle!
-    # Now with The Cao awesome hotkeys and new Bundle
     # Credit: trongrg/dotfiles
 
-#### sh -c "\`curl -fsSL https://raw.githubusercontent.com/caominhthe/dotfiles/master/install.sh \`"
+#### sh -c "\`curl -fsSL https://raw.githubusercontent.com/trongrg/dotfiles/master/install.sh \`"
 **Few more things
-
-**Have trouble with YouCompleteMe?
-* cd into YCM directory under ~/.vim/plugged/
-* $ ./install.py type it in & run it which compiles
-
-**Have problem with VimProc?
-* cd into vimproc under .yadr/vim/bundle/
-* Compile it with $ make
 
 **Always be sure to run `rake update` after pulling to ensure plugins are updated**
 
@@ -50,7 +41,7 @@ Please use GitHub Issues for pull requests or bug reports only.
 To get started please run:
 
 ```bash
-sh -c "`curl -fsSL https://raw.githubusercontent.com/caominhthe/awesomevim/master/install.sh`"
+sh -c "`curl -fsSL https://raw.githubusercontent.com/trongrg/dotfiles/master/install.sh`"
 ```
 
 ## Wait, you're not done! Do this:
