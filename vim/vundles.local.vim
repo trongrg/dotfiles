@@ -7,5 +7,3 @@ Bundle 'editorconfig/editorconfig-vim'
 Bundle 'Shougo/vimproc'
 Bundle 'Quramy/tsuquyomi'
 Bundle 'leafgarland/typescript-vim'
-Plugin 'w0rp/ale'
-
