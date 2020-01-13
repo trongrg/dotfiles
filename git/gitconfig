@@ -112,7 +112,7 @@
 [core]
   autocrlf = false
   editor = vim
-  excludesfile = ~/.gitignore
+	excludesfile = /Users/trongtran/.gitignore
 [advice]
   statusHints = false
 [diff]
@@ -128,3 +128,14 @@
   path = .gitconfig.user
 [init]
   templatedir = ~/.git_template
+[user]
+	name = Trong Tran
+	email = trong.tran@sstechvn.com
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[commit]
+	template = /Users/trongtran/.stCommitMsg

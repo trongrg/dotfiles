@@ -31,5 +31,10 @@ let g:tsuquyomi_single_quote_import=1
 
 set grepprg=ag
 let g:grep_cmd_opts = '--line-numbers --noheading'
-let g:dbgPavimPathMap = [['/Users/trongtran/code/co-ag','/vagrant'], ['/Users/trongtran/code/visix', '/var/www/html']]
+let g:dbgPavimPathMap = [
+      \ ['/Users/trongtran/code/wcblc', '/wordpress'],
+      \ ['/Users/trongtran/code/yun', '/magento'],
+      \ ['/Users/trongtran/code/click.org', '/click'],
+      \ ['/Users/trongtran/code/sydneysalonsupplies.com', '/usr/share/nginx/html'],
+      \ ['/Users/trongtran/code/sg-coop', '/app']]
 let g:dbgPavimPort = 9001
