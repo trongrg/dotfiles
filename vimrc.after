@@ -31,5 +31,20 @@ let g:tsuquyomi_single_quote_import=1
 
 set grepprg=ag
 let g:grep_cmd_opts = '--line-numbers --noheading'
-let g:dbgPavimPathMap = [['/Users/trongtran/code/co-ag','/vagrant'], ['/Users/trongtran/code/visix', '/var/www/html']]
+let g:dbgPavimPathMap = [['/Users/trongtran/code/yun','/magento'],['/Users/trongtran/code/visix', '/var/www/html']]
 let g:dbgPavimPort = 9001
+let g:vdebug_options = { 'port' : 9001 }
+let g:vdebug_keymap = {
+      \    "run" : "<F9>",
+      \    "run_to_cursor" : "<F5>",
+      \    "step_over" : "<F3>",
+      \    "step_into" : "<F2>",
+      \    "step_out" : "<F4>",
+      \    "close" : "<F8>",
+      \    "detach" : "<F6>",
+      \    "set_breakpoint" : "<F10>",
+      \    "get_context" : "<F11>",
+      \    "eval_under_cursor" : "<F12>",
+      \    "eval_visual" : "F7",
+      \}
+let g:vdebug_options.path_maps = {"/magento": "/Users/trongtran/code/angento"}
