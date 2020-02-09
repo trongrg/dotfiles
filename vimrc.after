@@ -48,3 +48,4 @@ let g:vdebug_keymap = {
       \    "eval_visual" : "F7",
       \}
 let g:vdebug_options.path_maps = {"/magento": "/Users/trongtran/code/angento"}
+let $FZF_DEFAULT_COMMAND = 'ag -g ""'
