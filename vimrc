@@ -36,7 +36,12 @@ let mapleader=","
 " =============== Vundle Initialization ===============
 " This loads all the plugins specified in ~/.vim/vundles.vim
 " Use Vundle plugin to manage all other plugins
-if has('nvim') && filereadable(expand("~/.vim/plug.vim"))
+if filereadable(expand("~/.vim/plug.vim"))
+  if empty(glob('~/.vim/autoload/plug.vim'))
+    silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+          \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+    autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+  endif
   source ~/.vim/plug.vim
 elseif filereadable(expand("~/.vim/vundles.vim"))
   source ~/.vim/vundles.vim

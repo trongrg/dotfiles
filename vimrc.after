@@ -38,3 +38,4 @@ let g:dbgPavimPathMap = [
       \ ['/Users/trongtran/code/sydneysalonsupplies.com', '/usr/share/nginx/html'],
       \ ['/Users/trongtran/code/sg-coop', '/app']]
 let g:dbgPavimPort = 9001
+let $FZF_DEFAULT_COMMAND = 'ag -g ""'
