@@ -1,5 +1,5 @@
-export PATH="/usr/local/opt/php@7.1/bin:$PATH"
-export PATH="/usr/local/opt/php@7.1/sbin:$PATH"
+export PATH="/usr/local/opt/php@7.2/bin:$PATH"
+export PATH="/usr/local/opt/php@7.2/sbin:$PATH"
 export BLACKFIRE_CLIENT_ID=0c370e3b-0d7f-446e-8a2c-11ac6cf88b67
 export BLACKFIRE_CLIENT_TOKEN=2d64c0cdbc691c26700cd035ee45eb492f3d73ed1b85524b31aa0144eea7c723
 export BLACKFIRE_SERVER_ID=7984ae64-e7bd-4513-b3fa-9346936b6182
