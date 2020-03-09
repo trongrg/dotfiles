@@ -18,12 +18,8 @@ Plug 'sheerun/vim-polyglot'
 Plug 'garbas/vim-snipmate'
 Plug 'honza/vim-snippets'
 Plug 'jtratner/vim-flavored-markdown'
-<<<<<<< HEAD
 " Plug 'scrooloose/syntastic'
 Plug 'dense-analysis/ale'
-=======
-Plug 'scrooloose/syntastic'
->>>>>>> neovim
 Plug 'nelstrom/vim-markdown-preview'
 Plug 'skwp/vim-html-escape'
 Plug 'mxw/vim-jsx'
@@ -66,11 +62,12 @@ Plug 'xolox/vim-session'
 " Vim Improvements
 Plug 'AndrewRadev/splitjoin.vim'
 Plug 'Raimondi/delimitMate'
-" Plug 'Shougo/neocomplete'
 if has('nvim')
   Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+  Plug 'Shougo/denite.nvim'
 else
   Plug 'Shougo/deoplete.nvim'
+  Plug 'Shougo/denite.nvim'
   Plug 'roxma/nvim-yarp'
   Plug 'roxma/vim-hug-neovim-rpc'
 endif
@@ -114,22 +111,14 @@ Plug 'evidens/vim-twig'
 Plug 'slim-template/vim-slim'
 Plug 'burnettk/vim-angular'
 Plug 'editorconfig/editorconfig-vim'
-Plug 'Shougo/vimproc'
 Plug 'HerringtonDarkholme/yats.vim'
-<<<<<<< HEAD
 if has('nvim')
   Plug 'mhartington/nvim-typescript', {'do': './install.sh'}
-else
-  Plug 'Quramy/tsuquyomi'
-endif
-if has('nvim')
   Plug 'joonty/vdebug'
 else
+  Plug 'Quramy/tsuquyomi'
   Plug 'brookhong/DBGPavim'
+  Plug 'Shougo/vimproc'
 endif
-=======
-Plug 'mhartington/nvim-typescript', {'do': './install.sh'}
-Plug 'joonty/vdebug'
->>>>>>> neovim
 
 call plug#end()
