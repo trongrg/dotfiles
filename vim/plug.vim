@@ -18,8 +18,12 @@ Plug 'sheerun/vim-polyglot'
 Plug 'garbas/vim-snipmate'
 Plug 'honza/vim-snippets'
 Plug 'jtratner/vim-flavored-markdown'
+<<<<<<< HEAD
 " Plug 'scrooloose/syntastic'
 Plug 'dense-analysis/ale'
+=======
+Plug 'scrooloose/syntastic'
+>>>>>>> neovim
 Plug 'nelstrom/vim-markdown-preview'
 Plug 'skwp/vim-html-escape'
 Plug 'mxw/vim-jsx'
@@ -112,6 +116,7 @@ Plug 'burnettk/vim-angular'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'Shougo/vimproc'
 Plug 'HerringtonDarkholme/yats.vim'
+<<<<<<< HEAD
 if has('nvim')
   Plug 'mhartington/nvim-typescript', {'do': './install.sh'}
 else
@@ -122,5 +127,9 @@ if has('nvim')
 else
   Plug 'brookhong/DBGPavim'
 endif
+=======
+Plug 'mhartington/nvim-typescript', {'do': './install.sh'}
+Plug 'joonty/vdebug'
+>>>>>>> neovim
 
 call plug#end()
