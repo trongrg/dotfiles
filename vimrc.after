@@ -39,9 +39,10 @@ let g:dbgPavimPathMap = [
       \ ['/Users/trongtran/code/sg-coop', '/app']]
 let g:dbgPavimPort = 9001
 let g:vdebug_options.path_maps = {
-      \ "/magento": "/Users/trongtran/code/angento",
+      \ "/magento": "/Users/trongtran/code/aitaikuji",
       \ "/click": "/Users/trongtran/code/click.org",
       \ "/nzjewellers": "/Users/trongtran/code/nzjewellers"
       \}
 let g:vdebug_options.break_on_open = 1
 let $FZF_DEFAULT_COMMAND = 'ag -g ""'
+let g:deoplete#enable_at_startup = 1
