@@ -31,6 +31,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-git'
 
 " Appearance
+Plug 'ryanoasis/vim-devicons'
 Plug 'chrisbra/color_highlight'
 Plug 'skwp/vim-colors-solarized'
 Plug 'iCyMind/NeoSolarized'
@@ -62,7 +63,7 @@ Plug 'xolox/vim-session'
 Plug 'AndrewRadev/splitjoin.vim'
 Plug 'Raimondi/delimitMate'
 if has('nvim')
-  Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+  " Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
   Plug 'Shougo/denite.nvim'
 else
   Plug 'Shougo/deoplete.nvim'
@@ -86,7 +87,7 @@ Plug 'sjl/gundo.vim'
 Plug 'skwp/YankRing.vim'
 Plug 'tomtom/tlib_vim'
 Plug 'tpope/vim-abolish'
-Plug 'tpope/vim-endwise'
+"Plug 'tpope/vim-endwise'
 Plug 'tpope/vim-ragtag'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-surround'
@@ -105,14 +106,17 @@ Plug 'ncm2/ncm2-path'
 Plug 'ncm2/ncm2-bufword'
 
 " Local
-Plug 'ervandew/supertab'
+" Plug 'ervandew/supertab'
 Plug 'evidens/vim-twig'
 Plug 'slim-template/vim-slim'
 Plug 'burnettk/vim-angular'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'HerringtonDarkholme/yats.vim'
+Plug 'neoclide/coc.nvim', {'branch': 'release', 'do': { -> coc#util#install()}}
+Plug 'neoclide/coc-denite'
+Plug 'neoclide/denite-git'
 if has('nvim')
-  Plug 'mhartington/nvim-typescript', {'do': './install.sh'}
+  " Plug 'mhartington/nvim-typescript', {'do': './install.sh'}
   Plug 'joonty/vdebug'
 else
   Plug 'Quramy/tsuquyomi'

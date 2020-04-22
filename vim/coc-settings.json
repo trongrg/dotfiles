@@ -1,0 +1,5 @@
+{
+  "tsserver.npm": "/usr/local/bin/npm",
+  "typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBrackets": true,
+  "typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": true
+}
