@@ -66,7 +66,7 @@ if has('nvim')
   " Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
   Plug 'Shougo/denite.nvim'
 else
-  Plug 'Shougo/deoplete.nvim'
+  " Plug 'Shougo/deoplete.nvim'
   Plug 'Shougo/denite.nvim'
   Plug 'roxma/nvim-yarp'
   Plug 'roxma/vim-hug-neovim-rpc'
@@ -115,12 +115,13 @@ Plug 'HerringtonDarkholme/yats.vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release', 'do': { -> coc#util#install()}}
 Plug 'neoclide/coc-denite'
 Plug 'neoclide/denite-git'
+Plug 'joonty/vdebug'
 if has('nvim')
   " Plug 'mhartington/nvim-typescript', {'do': './install.sh'}
-  Plug 'joonty/vdebug'
+  " Plug 'joonty/vdebug'
 else
-  Plug 'Quramy/tsuquyomi'
-  Plug 'brookhong/DBGPavim'
+  " Plug 'Quramy/tsuquyomi'
+  " Plug 'brookhong/DBGPavim'
   Plug 'Shougo/vimproc'
 endif
 

@@ -23,27 +23,27 @@ set signcolumn=yes
 " NOTE: Use command ':verbose imap <tab>' to make sure tab is not mapped by
 " other plugin before putting this into your config.
 
-function! s:tab_completion()
-  let info = complete_info(['pum_visible', 'items'])
+" function! s:tab_completion()
+"   let info = complete_info(['pum_visible', 'items'])
+"
+"   if info.pum_visible
+"     if len(info.items) <= 1
+"       return "\<C-y>"
+"     else
+"       return "\<C-n>"
+"     endif
+"   endif
+"
+"   return "\<C-g>u\<TAB>"
+" endfunction
 
-  if info.pum_visible
-    if len(info.items) <= 1
-      return "\<C-y>"
-    else
-      return "\<C-n>"
-    endif
-  endif
-
-  return "\<C-g>u\<TAB>"
-endfunction
-
-inoremap <silent><expr> <TAB> <SID>tab_completion()
+" inoremap <silent><expr> <TAB> <SID>tab_completion()
 inoremap <silent><expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
 
-" inoremap <silent><expr> <TAB>
-"       \ pumvisible() ? "\<C-n>" :
-"       \ <SID>check_back_space() ? "\<TAB>" :
-"       \ coc#refresh()
+inoremap <silent><expr> <TAB>
+      \ pumvisible() ? "\<C-n>" :
+      \ <SID>check_back_space() ? "\<TAB>" :
+      \ coc#refresh()
 inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
 
 function! s:check_back_space() abort
