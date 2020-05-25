@@ -1,3 +1,4 @@
+set encoding=UTF-8
 " Hide search highlighting
 map <Leader>l :set invhls <CR>
 

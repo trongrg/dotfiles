@@ -5,7 +5,7 @@ Plug 'ecomba/vim-ruby-refactoring'
 Plug 'tpope/vim-rails'
 Plug 'tpope/vim-rake'
 Plug 'tpope/vim-rvm'
-Plug 'vim-ruby/vim-ruby'
+" Plug 'vim-ruby/vim-ruby'
 Plug 'keith/rspec.vim'
 Plug 'skwp/vim-iterm-rspec'
 Plug 'skwp/vim-spec-finder'
@@ -23,6 +23,8 @@ Plug 'nelstrom/vim-markdown-preview'
 Plug 'skwp/vim-html-escape'
 Plug 'mxw/vim-jsx'
 Plug 'jparise/vim-graphql'
+Plug 'keith/swift'
+Plug 'tiagofumo/dart-vim-flutter-layout'
 
 " Git
 Plug 'gregsexton/gitv'
@@ -31,7 +33,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-git'
 
 " Appearance
-Plug 'ryanoasis/vim-devicons'
+" Plug 'ryanoasis/vim-devicons'
 Plug 'chrisbra/color_highlight'
 Plug 'skwp/vim-colors-solarized'
 Plug 'iCyMind/NeoSolarized'
@@ -41,6 +43,7 @@ Plug 'morhetz/gruvbox'
 Plug 'xsunsmile/showmarks'
 Plug 'chriskempson/base16-vim'
 Plug 'godlygeek/csapprox'
+Plug 'rakr/vim-one'
 
 " Search
 Plug 'justinmk/vim-sneak'
@@ -51,7 +54,6 @@ Plug 'skwp/greplace.vim'
 Plug 'Lokaltog/vim-easymotion'
 
 " Project
-
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'jistr/vim-nerdtree-tabs'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
@@ -104,6 +106,7 @@ Plug 'phpactor/ncm2-phpactor'
 Plug 'filipekiss/ncm2-look.vim'
 Plug 'ncm2/ncm2-path'
 Plug 'ncm2/ncm2-bufword'
+Plug 'editorconfig/editorconfig-vim'
 
 " Local
 " Plug 'ervandew/supertab'

@@ -1,3 +1,3 @@
-export JAVA_HOME=/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home
-export ANDROID_HOME=$HOME/Library/Android/sdk
-export ANDROID_SDK_ROOT=$ANDROID_HOME
+export JAVA_HOME='/Applications/Android Studio.app/Contents/jre/jdk/Contents/Home'
+export ANDROID_HOME=/Users/trongtran/Library/Android/sdk
+export ANDROID_SDK_ROOT=/Users/trongtran/Library/Android/sdk
