@@ -118,8 +118,8 @@ Plug 'HerringtonDarkholme/yats.vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release', 'do': { -> coc#util#install()}}
 Plug 'neoclide/coc-denite'
 Plug 'neoclide/denite-git'
-Plug 'joonty/vdebug'
 if has('nvim')
+  Plug 'joonty/vdebug'
   " Plug 'mhartington/nvim-typescript', {'do': './install.sh'}
   " Plug 'joonty/vdebug'
 else
