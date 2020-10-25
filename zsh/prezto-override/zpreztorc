@@ -125,6 +125,7 @@ zstyle ':prezto:module:syntax-highlighting' highlighters \
 
 # Auto set the tab and window titles.
 zstyle ':prezto:module:terminal' auto-title 'yes'
+zstyle :prezto:module:prompt theme powerlevel10k
 
 #
 # Tmux
