@@ -23,7 +23,7 @@ Plug 'nelstrom/vim-markdown-preview'
 Plug 'skwp/vim-html-escape'
 Plug 'mxw/vim-jsx'
 Plug 'jparise/vim-graphql'
-Plug 'keith/swift'
+" Plug 'keith/swift'
 Plug 'tiagofumo/dart-vim-flutter-layout'
 
 " Git
