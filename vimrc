@@ -138,3 +138,7 @@ let g:python_host_prog = '/usr/local/bin/python'
 let g:python2_host_prog = '/usr/local/bin/python'
 let g:python3_host_prog = '/usr/local/bin/python3'
 " let g:ruby_host_prog = '/Users/trongtran/.rbenv/shims/gem'
+
+if filereadable(expand("~/.vimrc.after"))
+  source ~/.vimrc.after
+endif

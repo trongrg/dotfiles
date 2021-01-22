@@ -49,3 +49,4 @@ else
 endif
 let $FZF_DEFAULT_COMMAND = 'ag -g ""'
 let g:deoplete#enable_at_startup = 1
+let g:snipMate = { 'snippet_version' : 1 }
