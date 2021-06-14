@@ -31,22 +31,6 @@ let g:tsuquyomi_single_quote_import=1
 
 set grepprg=ag
 let g:grep_cmd_opts = '--line-numbers --noheading'
-if has('nvim')
-  let g:vdebug_options.path_maps = {
-        \ "/app": "/Volumes/Extend/code/sg-coop",
-        \ "/click": "/Volumes/Extend/code/click.org",
-        \ "/nzjewellers": "/Users/trongtran/code/nzjewellers"
-        \}
-  let g:vdebug_options.break_on_open = 1
-else
-  let g:dbgPavimPathMap = [
-        \ ['/Users/trongtran/code/wcblc', '/wordpress'],
-        \ ['/Users/trongtran/code/aitaikuji', '/magento'],
-        \ ['/Users/trongtran/code/click.org', '/click'],
-        \ ['/Users/trongtran/code/sydneysalonsupplies.com', '/usr/share/nginx/html'],
-        \ ['/Users/trongtran/code/sg-coop', '/app']]
-  let g:dbgPavimPort = 9001
-endif
 let $FZF_DEFAULT_COMMAND = 'ag -g ""'
 let g:deoplete#enable_at_startup = 1
 let g:snipMate = { 'snippet_version' : 1 }

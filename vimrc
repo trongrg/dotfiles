@@ -142,3 +142,20 @@ let g:python3_host_prog = '/usr/local/bin/python3'
 if filereadable(expand("~/.vimrc.after"))
   source ~/.vimrc.after
 endif
+let g:snipMate = { 'snippet_version' : 1 }
+" let g:vimspector_enable_mappings = 'HUMAN'
+
+nmap <F5>         <Plug>VimspectorContinue
+nmap <leader><F5> <Plug>VimspectorLaunch
+nmap <F6>         <Plug>VimspectorStop
+nmap <F9>         <Plug>VimspectorRestart
+nmap <F7>         <Plug>VimspectorPause
+nmap <F10>         <Plug>VimspectorToggleBreakpoint
+nmap <leader><F10> <Plug>VimspectorToggleConditionalBreakpoint
+nmap <F8>         <Plug>VimspectorAddFunctionBreakpoint
+nmap <leader><F8> <Plug>VimspectorRunToCursor
+nmap <F3>        <Plug>VimspectorStepOver
+nmap <F4>        <Plug>VimspectorStepInto
+nmap <F2>        <Plug>VimspectorStepOut
+nmap <F12> <Plug>VimspectorBalloonEval
+xmap <F12> <Plug>VimspectorBalloonEval

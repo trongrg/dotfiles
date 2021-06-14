@@ -21,7 +21,7 @@ Plug 'jtratner/vim-flavored-markdown'
 Plug 'dense-analysis/ale'
 Plug 'nelstrom/vim-markdown-preview'
 Plug 'skwp/vim-html-escape'
-Plug 'mxw/vim-jsx'
+" Plug 'mxw/vim-jsx'
 Plug 'jparise/vim-graphql'
 " Plug 'keith/swift'
 Plug 'tiagofumo/dart-vim-flutter-layout'
@@ -49,7 +49,9 @@ Plug 'rakr/vim-one'
 Plug 'justinmk/vim-sneak'
 Plug 'rking/ag.vim'
 Plug 'henrik/vim-indexed-search'
-Plug 'nelstrom/vim-visual-star-search'
+" Plug 'nelstrom/vim-visual-star-search'
+" Plug 'eliba2/vim-node-inspect'
+" Plug 'leafOfTree/vim-vue-plugin'
 Plug 'skwp/greplace.vim'
 Plug 'Lokaltog/vim-easymotion'
 
@@ -64,12 +66,9 @@ Plug 'xolox/vim-session'
 " Vim Improvements
 Plug 'AndrewRadev/splitjoin.vim'
 Plug 'Raimondi/delimitMate'
+Plug 'Shougo/denite.nvim'
 if has('nvim')
-  " Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-  Plug 'Shougo/denite.nvim'
 else
-  " Plug 'Shougo/deoplete.nvim'
-  Plug 'Shougo/denite.nvim'
   Plug 'roxma/nvim-yarp'
   Plug 'roxma/vim-hug-neovim-rpc'
 endif
@@ -106,7 +105,6 @@ Plug 'phpactor/ncm2-phpactor'
 Plug 'filipekiss/ncm2-look.vim'
 Plug 'ncm2/ncm2-path'
 Plug 'ncm2/ncm2-bufword'
-Plug 'editorconfig/editorconfig-vim'
 
 " Local
 " Plug 'ervandew/supertab'
@@ -118,14 +116,7 @@ Plug 'HerringtonDarkholme/yats.vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release', 'do': { -> coc#util#install()}}
 Plug 'neoclide/coc-denite'
 Plug 'neoclide/denite-git'
-if has('nvim')
-  Plug 'joonty/vdebug'
-  " Plug 'mhartington/nvim-typescript', {'do': './install.sh'}
-  " Plug 'joonty/vdebug'
-else
-  " Plug 'Quramy/tsuquyomi'
-  " Plug 'brookhong/DBGPavim'
-  Plug 'Shougo/vimproc'
-endif
+Plug 'Shougo/vimproc'
+Plug 'puremourning/vimspector'
 
 call plug#end()

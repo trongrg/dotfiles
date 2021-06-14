@@ -137,3 +137,5 @@
 	email = trong.tran@sstechvn.com
 [commit]
 	template = /Users/trongtran/.stCommitMsg
+[pull]
+	rebase = true

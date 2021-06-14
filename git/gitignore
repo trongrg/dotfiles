@@ -54,3 +54,4 @@ Session.vim
 .powenv
 
 rerun.txt
+.vimspector.json
